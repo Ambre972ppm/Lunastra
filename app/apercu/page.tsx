@@ -1,0 +1,2 @@
+import { sections } from '@/lib/navigation';
+export default function Overview() { return <main className="luna-page"><p className="luna-kicker">Lunastra · Structure de la V1</p><h1>Mon univers prend forme</h1><p>Les rubriques sont organisées. Les données personnelles restent fermées tant que la connexion n’est pas intégrée.</p><div className="luna-grid">{sections.map(([slug,title,description])=><a key={slug} href={'/espace/'+slug}><h2>{title}</h2><p>{description}</p></a>)}</div></main>; }
